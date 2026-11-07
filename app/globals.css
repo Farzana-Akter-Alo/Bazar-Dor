@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --animate-marquee: marquee 50s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
